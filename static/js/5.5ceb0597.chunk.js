@@ -1,0 +1,2 @@
+(this.webpackJsonpmovie=this.webpackJsonpmovie||[]).push([[5],{198:function(t,e,s){"use strict";s.r(e);s(0);var c=s(178),n=s.n(c),i=s(5);e.default=function(){return Object(i.jsx)("div",{children:Object(i.jsxs)("center",{children:[Object(i.jsx)("h1",{children:"asa"}),Object(i.jsx)(n.a,{url:"https://content.jwplatform.com/manifests/yp34SRmf.m3u8"})]})})}}}]);
+//# sourceMappingURL=5.5ceb0597.chunk.js.map
