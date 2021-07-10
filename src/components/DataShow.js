@@ -5,7 +5,8 @@ import { movieRequest } from "../redux/movies/action";
 import { allMovies } from "../redux/sagas/saga";
 import Mycard from "./Mycard";
 
-function DataShow() {
+function DataShow(props) {
+  const { sdata } = props;
   const dispatch = useDispatch();
   const [show, setshow] = useState(0);
   useEffect(() => {
@@ -14,12 +15,19 @@ function DataShow() {
   }, []);
 
   const state = useSelector((state) => state.Movies);
-  console.log(state);
 
   const showdata = () => {
     var alldata = "";
     if (show > 0 && state.loading === false) {
-      alldata = state.data.results.map((data, index) => {
+      var Fdata = state.data.results;
+      if (sdata.search !== "" || sdata.search !== " ") {
+        let val = sdata.search.toLowerCase();
+        let matches = [];
+        matches = Fdata.filter((v) => v.title.toLowerCase().includes(val));
+        Fdata = matches;
+      }
+
+      alldata = Fdata.map((data, index) => {
         return (
           <>
             <Grid item xs={6}>
@@ -29,7 +37,6 @@ function DataShow() {
         );
       });
     }
-    console.log(alldata);
     return alldata;
   };
 

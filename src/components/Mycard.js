@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
     color: "blue",
     // transform: "scale(0.9)",
     "&:hover": {
-      transform: "scale(1.03)",
+      // transform: "scale(1.03)",
       "& $overlay": {
         width: "100%",
       },
