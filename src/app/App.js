@@ -37,9 +37,10 @@ function App() {
         <div className={classes.root}>
           <NavBar />
           <Switch>
-            <Route exact path="/vedio" component={Page2} />
-            <Route exact path="/detailpage" component={Page1} />
-            <Route exact path="/" component={Page0} />
+            {/* <Route exact path="/vedio" component={Page2} /> */}
+            {/* <Route exact path="/detailpage" component={Page1} /> */}
+            {/* <Route exact path="/" component={Page0} /> */}
+            {Page0}
           </Switch>
         </div>
         <CssBaseline />
