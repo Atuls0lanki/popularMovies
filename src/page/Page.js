@@ -8,27 +8,33 @@ function Page() {
     <div>
       <Grid container style={{ padding: "25px" }}>
         <Grid item xs={12}>
-          <Typography align="center" variant="h3">
+          {/* <Typography align="center" variant="h3">
             Welcome to MyMovies
-          </Typography>
+          </Typography> */}
         </Grid>
         <Grid item xs={12}>
-          <Typography variant="h5">All Movies</Typography>
           <Grid container>
-            <Paper elevation={3} style={{ padding: "20px", width: "100%" }}>
-              <Grid item xs={12}>
+            {/* <Paper elevation={3} style={{ padding: "20px", width: "100%" }}> */}
+            <Grid container style={{ paddingTop: "20px" }}>
+              <Typography variant="h3" style={{ paddingLeft: "20px" }}>
+                Popular Movies
+              </Typography>
+              <Grid item xs={4}></Grid>
+              <Grid item xs></Grid>
+              <Grid item xs={4}>
                 <TextField
                   variant="outlined"
                   size="small"
                   label="Search Here"
                   color="secondary"
+                  fullWidth
                 ></TextField>
                 <Link to="/vedio">
                   <Button variant="contained">vedio</Button>
                 </Link>
               </Grid>
-              <Grid item xs={12}></Grid>
-            </Paper>
+            </Grid>
+            {/* </Paper> */}
             <DataShow />
           </Grid>
         </Grid>

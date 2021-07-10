@@ -22,7 +22,7 @@ function DataShow() {
       alldata = state.data.results.map((data, index) => {
         return (
           <>
-            <Grid item xs={3}>
+            <Grid item xs={6}>
               <Mycard data={data} key={index} />
             </Grid>
           </>
@@ -35,7 +35,7 @@ function DataShow() {
 
   return (
     <>
-      <Grid container spacing={3} style={{ paddingTop: "25px" }}>
+      <Grid container spacing={5} style={{ paddingTop: "25px" }}>
         {showdata()}
       </Grid>
     </>
