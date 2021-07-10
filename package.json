@@ -1,6 +1,6 @@
 {
   "name": "movie",
-  "homepage": " https://atuls0lanki.github.io/popularMovies",
+  "homepage": "https://atuls0lanki.github.io/popularMovies",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
