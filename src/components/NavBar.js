@@ -23,7 +23,7 @@ export default function NavBar() {
         <Toolbar variant="dense">
           <MovieFilterIcon fontSize="large" style={{ marginRight: "20px" }} />
           <Typography variant="h6" color="inherit">
-            MyMovies
+            MyMovies All
           </Typography>
         </Toolbar>
       </AppBar>
