@@ -198,18 +198,16 @@ function Mycard(props) {
                             <Fade in={open}>
                               <div>
                                 <Grid container>
-                                  <Grid item xs>
+                                  {/* <Grid item xs>
                                     <Typography
                                       align="center"
                                       variant="h3"
-                                      color="textPrimary"
+                                      color="textsecondary"
                                     >
                                       Preview Movie
                                     </Typography>
-                                  </Grid>
-                                  <Grid item xs></Grid>
+                                  </Grid> */}
                                   <Grid item xs>
-                                    {" "}
                                     <Typography align="right">
                                       <IconButton
                                         style={{
@@ -225,7 +223,13 @@ function Mycard(props) {
                                 </Grid>
 
                                 <Typography align="center">
-                                  <ReactPlayer url="https://content.jwplatform.com/manifests/yp34SRmf.m3u8"></ReactPlayer>
+                                  <ReactPlayer
+                                    playing={true}
+                                    controls={true}
+                                    loop={true}
+                                    playIcon
+                                    url="https://content.jwplatform.com/manifests/yp34SRmf.m3u8"
+                                  ></ReactPlayer>
                                 </Typography>
                               </div>
                             </Fade>
